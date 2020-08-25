@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.7)
+project(ppcam VERSION 1.0.0)
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(GSTREAMER REQUIRED gstreamer-1.0)
+add_subdirectory(src)
